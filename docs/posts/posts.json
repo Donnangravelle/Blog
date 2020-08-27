@@ -1,18 +1,18 @@
 [
   {
     "path": "posts/welcome/",
-    "title": "Welcome to Psychological Ideas",
-    "description": "Welcome to our new blog, Psychological Ideas. We hope you enjoy \nreading what we have to say!",
+    "title": "Introduction to the blog",
+    "description": "This is the first post of this new blog! I will be introducing myself and what the purpose of this blog is.",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Donnan (Chris) Gravelle",
+        "url": "https://donnangravelle.github.io/Blog/"
       }
     ],
     "date": "2020-08-27",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-08-27T10:33:04-04:00",
-    "input_file": {}
+    "last_modified": "2020-08-27T13:25:23-04:00",
+    "input_file": "welcome.utf8.md"
   }
 ]
