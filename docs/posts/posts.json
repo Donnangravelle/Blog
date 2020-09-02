@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/9_1_2020_Commentary_on_Week_1/1/2020/",
+    "title": "Commentary on Miller, Newell, & Schacter et al.",
+    "description": "Notes and thoughts on three classic works in psychology",
+    "author": [
+      {
+        "name": "Donnan Gravelle",
+        "url": "https://donnangravelle.github.io/Blog/"
+      }
+    ],
+    "date": "2020-09-01",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-09-02T15:57:40-04:00",
+    "input_file": "welcome.utf8.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "What is Cognition?",
     "description": "This is the first post of this new blog! I will be introducing myself and discussing what I think cognition is.",

@@ -19,366 +19,39 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>Psychological Ideas</title>
+  <title>Commentary on Miller, Newell, &amp; Schacter et al.</title>
+  
+  <meta property="description" itemprop="description" content="Notes and thoughts on three classic works in psychology"/>
   
   
-  
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-09-01"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-09-01"/>
+  <meta name="article:author" content="Donnan Gravelle"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Psychological Ideas"/>
+  <meta property="og:title" content="Commentary on Miller, Newell, &amp; Schacter et al."/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Notes and thoughts on three classic works in psychology"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Psychological Ideas"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Psychological Ideas"/>
+  <meta property="twitter:title" content="Commentary on Miller, Newell, &amp; Schacter et al."/>
+  <meta property="twitter:description" content="Notes and thoughts on three classic works in psychology"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Psychological Ideas"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Commentary on Miller, Newell, & Schacter et al."]},{"type":"character","attributes":{},"value":["Notes and thoughts on three classic works in psychology"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Donnan Gravelle"]},{"type":"character","attributes":{},"value":["https://donnangravelle.github.io/Blog/"]},{"type":"character","attributes":{},"value":["College of Staten Island/CUNY Graduate Center"]},{"type":"character","attributes":{},"value":["https://www.csi.cuny.edu"]}]}]},{"type":"character","attributes":{},"value":["09-1-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
   
-  <script type="application/javascript">
-  
-    window.headroom_prevent_pin = false;
-  
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-  
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-  
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-  
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-  
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"NULL"}
   </script>
-  
-  <style type="text/css">
-  
-  /* Theme (user-documented overrideables for nav appearance) */
-  
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #455a64;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .distill-site-nav a:hover {
-    color: white;
-  }
-  
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-  
-  .distill-site-header {
-  
-  }
-  
-  .distill-site-footer {
-  
-  }
-  
-  
-  /* Site Header */
-  
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-  
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-  
-  
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-  
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-  
-  .distill-site-header .title {
-    font-size: 18px;
-  }
-  
-  .distill-site-header .logo {
-    padding: 0;
-  }
-  
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-  
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-  
-  
-  
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-  
-  
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-  
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-  
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-dropdown-active {
-    display: block;
-  }
-  
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-  
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-  
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative;}
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-  
-  /* Site Footer */
-  
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  
-  /* Headroom */
-  
-  d-title {
-    padding-top: 6rem;
-  }
-  
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-  
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-  
-  .headroom--unpinned {
-    top: -100px;
-  }
-  
-  .headroom--pinned {
-    top: 0;
-  }
-  
-  </style>
-  
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
   
@@ -1264,400 +937,58 @@
   </script>
   
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="welcome_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="welcome_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="welcome_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="welcome_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Psychological Ideas","authors":[]}
+{"title":"Commentary on Miller, Newell, & Schacter et al.","description":"Notes and thoughts on three classic works in psychology","authors":[{"author":"Donnan Gravelle","authorURL":"https://donnangravelle.github.io/Blog/","affiliation":"College of Staten Island/CUNY Graduate Center","affiliationURL":"https://www.csi.cuny.edu"}],"publishedDate":"2020-09-01T00:00:00.000-04:00","citationText":"Gravelle, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Psychological Ideas</a>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-<style type="text/css">
-
-/* Styles for listing layout (hide title) */
-.layout-listing d-title, .layout-listing .d-title {
-  display: none;
-}
-
-/* Styles for posts lists (not auto-injected) */
-
-
-.posts-with-sidebar {
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-.posts-list .description h2,
-.posts-list .description p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.posts-list .description h2 {
-  font-weight: 700;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.posts-list h2.post-tag {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 12px;
-}
-.posts-list {
-  margin-top: 60px;
-  margin-bottom: 24px;
-}
-
-.posts-list .post-preview {
-  text-decoration: none;
-  overflow: hidden;
-  display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 24px 0;
-}
-
-.post-preview-last {
-  border-bottom: none !important;
-}
-
-.posts-list .posts-list-caption {
-  grid-column: screen;
-  font-weight: 400;
-}
-
-.posts-list .post-preview h2 {
-  margin: 0 0 6px 0;
-  line-height: 1.2em;
-  font-style: normal;
-  font-size: 24px;
-}
-
-.posts-list .post-preview p {
-  margin: 0 0 12px 0;
-  line-height: 1.4em;
-  font-size: 16px;
-}
-
-.posts-list .post-preview .thumbnail {
-  box-sizing: border-box;
-  margin-bottom: 24px;
-  position: relative;
-  max-width: 500px;
-}
-.posts-list .post-preview img {
-  width: 100%;
-  display: block;
-}
-
-.posts-list .metadata {
-  font-size: 12px;
-  line-height: 1.4em;
-  margin-bottom: 18px;
-}
-
-.posts-list .metadata > * {
-  display: inline-block;
-}
-
-.posts-list .metadata .publishedDate {
-  margin-right: 1em;
-}
-
-.posts-list .metadata .tags {
-  margin-top: 1em;
-}
-
-.posts-list .tags .tag {
-  color: rgba(0,0,0,0.67);
-  padding: 0.3em 0.5em;
-  margin: 0;
-  font-size: 80%;
-  border: 1px solid rgba(0,0,0,0.4);
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.posts-list img {
-  opacity: 1;
-}
-
-.posts-list img[data-src] {
-  opacity: 0;
-}
-
-.posts-more {
-  clear: both;
-}
-
-
-.posts-sidebar {
-  font-size: 16px;
-}
-
-.posts-sidebar h3 {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.sidebar-section {
-  margin-bottom: 30px;
-}
-
-.categories ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.categories li {
-  color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 0;
-}
-
-.categories li>a {
-  border-bottom: none;
-}
-
-.categories li>a:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.categories .active {
-  font-weight: 600;
-}
-
-.categories .category-count {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-
-@media(min-width: 768px) {
-  .posts-list .post-preview h2 {
-    font-size: 26px;
-  }
-  .posts-list .post-preview .thumbnail {
-    float: right;
-    width: 35%;
-    margin-bottom: 0;
-  }
-  .posts-list .post-preview .description {
-    float: left;
-    width: 45%;
-  }
-  .posts-list .post-preview .metadata {
-    float: left;
-    width: 15%;
-    margin-top: 8px;
-  }
-  .posts-list .post-preview p {
-    margin: 0 0 12px 0;
-    line-height: 1.5em;
-    font-size: 16px;
-  }
-  .posts-with-sidebar .posts-list {
-    float: left;
-    width: 72%;
-  }
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 20%;
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-.downlevel .posts-list .post-preview {
-  color: inherit;
-}
-
-</style>
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace("#", "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if (category == page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption">Psychological Ideas</h1>
-<a href="posts/9_1_2020_Commentary_on_Week_1/1/2020/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Sept. 1, 2020</div>
-</div>
-<div class="thumbnail"></div>
-<div class="description">
-<h2>Commentary on Miller, Newell, &amp; Schacter et al.</h2>
-<p>Notes and thoughts on three classic works in psychology</p>
-</div>
-</a>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 27, 2020</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>What is Cognition?</h2>
-<p>This is the first post of this new blog! I will be introducing myself and discussing what I think cognition is.</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Psychological Ideas</h1>
-
+<h1>Commentary on Miller, Newell, &amp; Schacter et al.</h1>
+<p>Notes and thoughts on three classic works in psychology</p>
 </div>
 
+<div class="d-byline">
+  Donnan Gravelle <a href="https://donnangravelle.github.io/Blog/" class="uri">https://donnangravelle.github.io/Blog/</a> (College of Staten Island/CUNY Graduate Center)<a href="https://www.csi.cuny.edu" class="uri">https://www.csi.cuny.edu</a>
+  
+<br/>09-1-2020
+</div>
 
 <div class="d-article">
-
+<p>These are notes taken while I am reading.</p>
+<h2 id="miller-the-magic-number-7">Miller: The Magic Number 7</h2>
+<p>Miller begins his paper with a rather information introduction to the topic. Interestingly, he feels it necessary to describe the theoretical framework he is working in. This is unusual because most papers nowadays may introduce some theoretical background, but they almost never fully explicate the base assumptions in the way that Miller does. One working on, say, embodied linguistic representations usually does not feel obligated in opening papers with an introduction to the notion of representation, how co-variation in neural spikes are assumed to carry information about objects in the world, the mind as a computer metaphor, or other such basic fundamental assumptions in their field. They may give an introduction to what is means for a concept to be embodied, but that is a more specific theoretical consideration that rests on several more basic theoretical assumptions.</p>
+<p>It is now clearer why Miller goes to such lengths to discuss the information processing metaphor for the mind; this paper is an attempt to push it rather heavily. Anyone who has taken a cognitive psychology undergraduate course will be familiar with the notion that working memory has a capacity of seven items plus or minus two. However, the way I just described it is using the notion of working memory as a container, where there is a limit to the contents. Miller is using the limits of working memory to motivate the notion that channel capacity is a decent metaphor for the mind. Here, channel capacity can be understood as the limit of information that can pass through some transducer. For example, my WIFI capacity could be around twenty-five megabits per second, which means that my router cannot process more than twenty-five megabits. It appears that the human mind can only process seven items at once, thus it has a seven item channel capacity (plus or minus 2).</p>
+<p>There isn’t really much left to say about this paper. It is a classic I’m glad I eventually read, and it is interesting to see information theory put forward as a novel approach. In cognitive science, there is a push to move away from information theory and it is now seen as the orthodox. I wonder how useful information theory is in the context of the limits of memory. Mathematical psychology of the nineteenth century tracked similar phenomena without need for information theory. For example, Weber’s law was constructed to track the least noticeable difference between magnitudes of stimuli. Here we might say, in informational terms, that it is tracking some form of sub-capacity of the channel. But Weber’s law has been effective for centuries before information theory and deals with a similar concept as the caps on memory. Maybe the idea is that information theory makes sense of the phenomena like Weber’s law, but isn’t the mathematical model supposed to be what makes sense of phenomena? Weber’s law makes sense of itself.</p>
+<h2 id="newell-20-questions-with-nature">Newell: 20 questions with nature</h2>
+<p>This one is really interesting in that it is essentially a discussion about the philosophy of psychological explanation. I am not quite sure exactly what his target is. Is it the fact that investigation are done with an assumption of binary results, or it is that progress is being made bottom-up, with individual phenomena being explained in piecemeal without an over-hanging narrative that ties that together.</p>
+<p>Newell claims that one of the big problems is the lack of “control structure” in psychological theory. This is difficult to understand, and it does not help that his explanation of it invokes outdated coding languages (admittedly not his own fault). Here is my best attempt. The control structure refers to the relations between phenomena that make sense of them. In other words, the control structure is the syntax, and the experiments are the semantics. Without syntax, we may understand individual words, but any larger strings of words would be impossible to articulate. Thus, we need syntax to connect words into larger constructions, so that words may make sense together, not just apart.</p>
+<p>In the sense used by Newell, it seems that there is no framework that connects the desperate experimental phenomena. This seems wrong, simply because he admits that these experiments advance the overarching theoretical approach. Isn’t that the control structure? The information processing metaphor for cognition would be the glue that holds together those findings. It would be hard to imagine any other way to discuss the control structure. He uses the computer analogy, but this can be misleading, especially since computer science has come so far, and new connectionist, neural net focused appraoches do not have the same type of architecture. Instead, look at other, more established scientific explanantions. What would be the “control structure” in Newtonian physics? The structure that makes sense of the relation between two objects is the overarching theory of gravity. Here, the semantics (the experimental results) and the syntax (the theoretical structure that makes sense of the semantics) are resolved by just positing gravitational force, and then modeling that force. Thus, we have a satisfying control structure for a vast collection of experimental results (we are ignoring relativity and quantum for simplicity’s sake, as well as because I cannot, for the life of me, understand the latter. Though perhaps that would be an example of several control structures that operate on different levels of explanation, something we now readily accept in the cognitive sciences nowadays).</p>
+<p>I am ignoring Newell’s focus on information processing in my concluding remarks, as I have little to say other than the field has moved on from the strict computer metaphor, and even proponents of the computer metaphor today do not mean it in such a fashion. Instead, I want to talk about his notion of psychological progress. Part of me thinks he is correct to be worried. Often times people like to use the metaphor of a puzzle to describe scientific progress. We chip away at some unknown by slow and steady methods of observation and experimentation, putting together a mosaic of evidence that eventually fit together to form a coherent whole. However, Newell does not think this is how psychology should work, and indeed I doubt that this is seriously how science works. Rather, science needs an idea of a big picture in order to effectively investigate the puzzle pieces. Thus, we scientists continue guessing at what the puzzle is of when attempting to further investigate it. We call call this a path to discovery. Without an idea of where we are going, we simply wouldn’t have an idea of how to get there. I think this is what Newell is getting at. Too much is left unconstrained and disconnected in these smaller theories.</p>
+<p>At the same time, too much emphasis on looking forward towards a grand theory is dangerous. It can bias the types of explorations we conduct, and close us off to important investigations because these areas are not covered by out overarching theory. There is no room in the information theory paradigm for dynamic and embodied cognition, so if one is set on only working towards that theory, important aspects of the mind would be ignored and never investigated. Also, we need researchers willing to do important, somewhat theoretically neutral, but minor experiments on phenomena that may not be theoretically interesting on their own, but accumulate into impossible to ignore sets of data. Every famous researcher who puts forward a grand theory is doing so off of the backs of normal scientists accumulating data that may not have a paradigm in mind.</p>
+<h2 id="semon-theory-of-memory">Semon Theory of Memory</h2>
+<p>It is good to see that Semon carries on the tradition of classic German thinkers. He is very difficult to understand, but what he has to say is constantly remarked as important.</p>
+<p>I have very little to say as commentary on Semon’s theory. Honestly, I have a difficult time understanding the verbiage, and I have a lack of patience with reading nineteenth century literature for that reason. I also am not well versed in memory research, either of the 1970s or of today, so I can’t comment on the forward thinking nature of his work.</p>
+<p>I consider myself fairly well versed in cognitive psychology, and cognitive science in general, but I have never taken a course in or read serious work on memory. I see memory mentioned quite often, and it is implicitly always there in the background, but it has never been seriously discussed in the work I’ve read. Instead, I am much more comfortable discussing mental representations and attractor nets, both of which assume a theory of memory, but neither of which really detail one. As such, I found the Semon text to be impenetrable, with interesting insights sprinkled throughout.</p>
+<p>This is my shortest, least interesting commentary, and I apologize for that.</p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
