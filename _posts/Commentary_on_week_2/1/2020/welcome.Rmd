@@ -1,0 +1,54 @@
+---
+title: Commentary on Week 2 Readings
+description: Notes and thoughts on three papers
+  
+author:
+  - name: Donnan Gravelle 
+    url: https://donnangravelle.github.io/Blog/
+    affiliation: College of Staten Island/CUNY Graduate Center
+    affiliation_url: https://www.csi.cuny.edu
+date: 09-10-2020
+bibliography: Papers.bib
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+These are thoughts I had while reading these papers.
+
+## Instance Theory
+
+I am not quite sure how to interpret instance theory, but here is my attempt. Instance theory claims that very experience with some object or event that a person encounters creates a "memory trace". A memory trace can be understand as, I think, a sort of pathway in the semantic library that is the mind. For example, if I experience a rat on the subway, then my memory of the subway will have a pathway through the semantic library that includes both rats and, say, trains. Each new experience creates a new path through the library, and the current path one might take to get to a destination will be the most common or recent. Instance theory is thus highly contextual. 
+
+Hintzman[@hintzman__1986] offers a computational model of this kind of instance theory. I am not great at reading computational models, so I will not give a detailed analysis of it. I will however comment on a few basic assumptions Hintzman makes. First, Hintzman adopts a nativism that was fashionable at the time but is no doubt outdated. There plenty of computational models that can do similar feats without a Fodor-like insistence on nativism. This does make me wonder if there is anything in particular about instance theory that necessitates nativism. Surely not, because if one can make a model that can learn the fundamental relations that instance theory uses as a sort of glue, then instance theory can be "empiricist" as oppossed to "rationalistic". 
+
+Second, I was wondering how this account can be "embodied". I really like the philosopher Andy Clark[@clark_being_1998], so whenever I can I always try to read a theory in a way that makes it amendable to that kind of philosophy. I think that it can be incredibly embodied. In fact, while I was reading this, I kept thinking that it was the most biologically plausible model for memory I've read thus far (I haven't read much though). This seems rather easy to implement in a neural network, with connection weighting serving as an analogue to memory traces, and the contextual focus that it has means that it may very well serve as a nice "action-oriented" account. Memory traces are contextual, context exists, on the embodied appraoch, of action opportunities, therefore memory traces will include action-relevant features. I'm just spitballing here though, I have not thought this through much. 
+
+I do wonder how exactly we are to quantify the scale of relevant features. How fine-grained are the features that make memory traces? Are they of corners, edges or orientation, or perhaps memory traces are of intermediate features, such as color or basic shapes. Maybe both? I don't believe Hintzman really explained this.
+
+## Keystroke Dynamics
+
+When I read this paper by Professor Crump[@crump_instance_2019], I read it with the intention of finding something to pick a fight over. I do this whenever I am assigned a paper written by the professor because it is a rare opportunity to interrogate the author. 
+
+Unfortunately I couldn't find anything to push back on in this paper. I think it is a good paper. However, I am confused and intrigued by a few aspects of it. First, I am not quite sure how to make sense of information theory in this context. To me, it seems that information theory is a type of prediction based theory of information. For example, keystrokes dynamics fluctuated as a function of the reduction of uncertainty of items typed. In other words, the more predictable the typed words were, the quicker they were typed. Uncertainty would be reduced through experience of the items. 
+
+This sounds a lot like the Free Energy Principle[@friston_free-energy_2010], where the motivation for an organism is to reduce free energy through the reduction in uncertainty. Applied to the mind, it means that predictions of stimuli seek to reduce uncertainty, and redundant information is not transmitted[@clark_whatever_2013]. Of course, there is some disconnect between the two theories. First, free energy works much better with a Bayesian understanding of perceptual processing, where error signals reporting the mismatch between predicted signal and actual signal are reported. Nothing in information theory seems to necessitate error signals playing much of a role. Second, free energy has (seemingly) feedback dynamics built into it. Uncertainty reduction is facilitated through a dynamic process of sensory-motor feedback loops, where actions that produce high uncertainty are modified to minimize that uncertainty. 
+
+When one thinks of information theory, one thinks of a linear model of input which produces a linear model of output. Indeed, this paper seems to provide hard proof for that assumption. One does not think of sensorimotor feedback loops. But putting aside the non-linear vs. linear dispute, information theory put forward here seems to fit somewhat nicely with the free energy principle in that it seems to be concerned with the reduction of uncertainty in a signal. The specifics are up for debate though. 
+
+I also had some issues attempting to piece together exactly how information theory makes contact with instance theory. Here is my attempt to understand the connection: Instance theory states that on multiple instances of experience with an object or event, new memory traces are made. However, as one has more and more experience with some object or event, then there is a redundancy in signal. This redundancy in the signal will reduce uncertainty, in the sense of information theory. If uncertainty is reduced, then less of the signal needs to be explicitly/consciously represented, hence the development of automaticity. In sum, more memory traces means less uncertainty and more automaticity. I think this is the right interpretation, and if it is then I kinda dig it.
+
+## The Semantic Librarian
+
+I don't have a lot to say about this paper[@aujla_semantic_2019] other than it is pretty neat. It is always interesting to see how psychology and artificial intelligence/technology mix. As noted in the paper, there is a rich tradition of cross talk between the two disciplines. It seems every movement in psychology has an effect on AI, and vice versa. The use of multidimensional semantic spaces and vectors to find relevant keywords sounds rather useful, as well as incredibly complicated. As I've said, I've never been good at reading computational models, though I do not doubt in the slightest their utility. 
+
+There is not much more to say other than: this is pretty cool. 
+
+

@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Commentary_on_week_2/1/2020/",
+    "title": "Commentary on Week 2 Readings",
+    "description": "Notes and thoughts on three papers",
+    "author": [
+      {
+        "name": "Donnan Gravelle",
+        "url": "https://donnangravelle.github.io/Blog/"
+      }
+    ],
+    "date": "2020-09-10",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-09-10T13:37:50-04:00",
+    "input_file": "welcome.utf8.md"
+  },
+  {
     "path": "posts/9_1_2020_Commentary_on_Week_1/1/2020/",
     "title": "Commentary on Miller, Newell, & Schacter et al.",
     "description": "Notes and thoughts on three classic works in psychology",
